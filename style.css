@@ -1,0 +1,37 @@
+/*Importanto as fontes do Google Fonts: 'Barlow Condesend' para o título principal e 'Inter' para  o restante do texto.*/
+@import url('https://fonts.googleapis.com/css?family=Barlow=Condesend:wght@800;900&family=Inter:wght@400;500;600;700&display=swap');
+/*Reset global: remove margens e preeenchimento padrão do navegador e garante que bordas/padding não aumentam  o tamanho final do elemento*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações base do corpo da página: define a fonte padrão e a cor branca de fundo e a cor principal do texto */
+/* este é o corpo*/
+body{
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #242c4a;
+}
+
+/*--- ESTE É O CABEÇALHO header --- */
+
+/* Barra de navegação superior: largura total, altura fixa, fundo branco e alinha  a logo  de um lado  e o meno  do outro lado (space-between)*/
+header {
+    width: 100%;
+    height: 95px;
+    background: #ffffff;
+    display: felx;
+    justify-content:space-between;
+    padding:0 max (40px, calc((100% - 1160px) / 2 ));
+}
+
+/* --- LOGO --- */
+
+/* Container da logo: agrupar  a imagem e  o texto lateral, centralizando-os verticalmente com um pequeno espaço*/
+.logoimg {
+    
+}
+
