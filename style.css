@@ -23,15 +23,43 @@ header {
     width: 100%;
     height: 95px;
     background: #ffffff;
-    display: felx;
-    justify-content:space-between;
-    padding:0 max (40px, calc((100% - 1160px) / 2 ));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 max(40px, calc((100% - 1160px) / 2 ));
 }
 
 /* --- LOGO --- */
 
 /* Container da logo: agrupar  a imagem e  o texto lateral, centralizando-os verticalmente com um pequeno espaço*/
 .logoimg {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     
 }
+
+/* Define dimensões  fixas  para a imagem  da logo, evitanto distorções */ 
+.logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+/* Remove a marcação  da lista (bolinhas) no item  de texto  da logo */
+.logoimg li {
+    list-style: none;
+
+}
+
+/* Estilo do texto da logo: remove sublinhado, define cor azul escura e deixa em negrito */
+.logoimg a {
+     text-decoration: none;
+    color: #1a2c5e;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+    
+
 
