@@ -76,3 +76,135 @@ header {
     gap:32px;
    }
 
+   /* Remove  a marcação padrão de lista dos links de navegação*/
+   .sub-items li {
+    list-style: none;
+   }
+
+   /* Estilos dos links  do meu: fonte menor, cor acinzentda, espaçamento entre letras  e transição de cor suave */
+   .sub-items a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    color: #555f79;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+   }
+    /* Muda a cor do link para azul vibrante  quando o mouse passar por cima */
+    .sub-items a:houver{
+        color: #1a3ad6;
+    }
+
+    /* --- BOTÃO DE INSCRIÇÃO --- */
+
+    /* Destaca o botão: define a cor de fundo azul, texto branco, espaçamento internos (padding), bordas arredondadas e remove bordas padrão */
+    .buttom {
+        display: inline-block;
+        background: #112d8a;
+        color: #ffffff !important;
+        padding: 13px 22px;
+        border-radius: 4px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: background 0.2s ease;
+    }
+
+    /* Clareia um pouco o fundo  do botão  ao passar o mouse */
+    .buttom:houver{
+        background: #1a3ad6;
+    }
+
+    /* --- BANNER PRINCIPAL AZUL --- */
+
+    /* Área  principal: ocupa o restante da altura da tela, aplica um gradiente azul bem escuro (navy) e corta elementos que vazarem */
+    .container {
+        width: 100%;
+        min-height: calc( 100vh - 95px);
+        /*Ajustado para o tom de azul escuro idêntico ao  da segunda imagem*/
+       background: radial-gradient(circle at 85% 50%, #0d2987 0%, #081a5e 50%, #05103a 100%);
+       color: #ffffff;
+       position: relative;
+       overflow: hidden;
+    }
+
+    /* EFEITO DE CÍRCULOS CONCÊNTRICOS NO FUNDO (DIREITA) */
+    /* Usa um pseudo-elemento (::after) para desenhar linhas finas (1px) criando os aros do lado direito */
+    .container::after {
+        content:"";
+        position: absolute;
+        right: -100px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 700px;
+        height: 700px;
+        /* Primeira linha fina  do círculo interno */
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        /* Segunda linha fina externa feita com box-shadow de 1px de espessura (180 transparente + 181 com cor) */
+        box-shadow: 
+        0 0 0 180px transparent,
+        0 0 0 181px rgba(255, 255, 255, 0.05);
+         pointer-events: none; /*Garante que o efeito de fundo não bloqueie cliques no texto */
+    }
+
+    /* --- CONTEÚDO  DENTRO DO BANNER --- */
+
+    /* Organiza os textos dentro do banner: centraliza com o limite máximo de largura, organiza com a coluna e joga elementos pra cima (z-index) */
+    .hero-content {
+        max-height:1160px;
+        min-height: calc(100vh - 95px);
+        margin: 0 auto;
+        padding: 70px 20px 45px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* --- TEXTOS E ELEMENTOS DO BANNER --- */
+
+    /*Subtítulo de localização: texto pequeno, espaçado e em tom azul claro */
+    .localizacao {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2,5px;
+        color: #9cb5ff;
+        margin-bottom: 24px;
+    }
+
+    /* Título principal gigante: usa a font Condensed, altura de linha reduzida (junta as linhas) e letras grandes */
+    .hero-content h1 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 92px;
+        font-weight: 900;
+        line-height:0,88;
+        letter-spacing: -0.5;
+        margin-bottom: 35px;
+        color: #ffffff;
+    }
+
+    /*Parágrafo  de descrição: limita a largura máxima (380px) para não atravessar  toda a tela, com bom espaçamento entre as linhas */
+    .descrição {
+        max-width: 380;
+         font-size: 14px;
+        line-height: 1.7px;
+        font-weight: 400px;
+        color: #d1deff
+    }
+
+    /*Rodapé decorativo no canto inferior esquerdo. O "margin-top: auto" empurra essa parte para o final  do espaço disponível */
+    .hero-rodape {
+        display: flex;
+        align-items: center;
+        gap: 16;
+        margin-top: auto;
+        color: #b0c6ff;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    
