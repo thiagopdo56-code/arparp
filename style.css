@@ -16,7 +16,9 @@ body{
     color: #242c4a;
 }
 
+
 /*--- ESTE É O CABEÇALHO header --- */
+
 
 /* Barra de navegação superior: largura total, altura fixa, fundo branco e alinha  a logo  de um lado  e o meno  do outro lado (space-between)*/
 header {
@@ -29,7 +31,9 @@ header {
     padding: 0 max(40px, calc((100% - 1160px) / 2 ));
 }
 
+
 /* --- LOGO --- */
+
 
 /* Container da logo: agrupar  a imagem e  o texto lateral, centralizando-os verticalmente com um pequeno espaço*/
 .logoimg {
@@ -39,6 +43,7 @@ header {
     
 }
 
+
 /* Define dimensões  fixas  para a imagem  da logo, evitanto distorções */ 
 .logo {
     width: 44px;
@@ -46,11 +51,13 @@ header {
     object-fit: contain;
 }
 
+
 /* Remove a marcação  da lista (bolinhas) no item  de texto  da logo */
 .logoimg li {
     list-style: none;
 
 }
+
 
 /* Estilo do texto da logo: remove sublinhado, define cor azul escura e deixa em negrito */
 .logoimg a {
@@ -58,8 +65,14 @@ header {
     color: #1a2c5e;
     font-size: 15px;
     font-weight: 800;
-    letter-spacing: 0.5px;
+     letter-spacing: 0.5px;
 }
-    
+    /* --- MENU DE NAVEGAÇÃO --- */
 
+    /* Container dos links do menu e do botão: alinha horizontalmente com espaçamento  regular entre eles */
+   .sub-items {
+    display: flex;
+    align-items: center;
+    gap:32px;
+   }
 
