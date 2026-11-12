@@ -1,0 +1,101 @@
+/* @Import: tras as fontes do Google Fonts */
+/* @Import: Barlow Condensed para titulo  e Inter para o resto */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Inter:wght@400;500;600;700&display=swap');
+
+/*Reset: Remove as margens e padding padrão do navegador e garante que as bordas não aumentem o tamanho dos elementos */
+/* *:Seleciona todos os elementos do documento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Rolagem suave: Adiciona uma rolagem suave ao navegar entre seções da página */
+/*Scroll-padding-top desconta a altura do header para ele não cobrir o titulo da seção */
+html {
+    scroll-behavior: smooth; /* rolagem suave ao clicar nos links do menu */
+    scroll-padding-top: 95px; /* desconta o cabeçalho fixo ao rolar até uma seção */
+}
+/*Configurações basicas do corpo da página: Define a fonte padrão, cor de fundo e cor do texto */
+body {
+    font-family: 'Inter', sans-serif; /* tipo de letra (fonte) */
+    background: #ffffff; /* fundo: cor, gradiente ou imagem */
+    color: #242c4a; /* cor do texto */
+}
+/*Cabeçalho*/
+.header {
+    width: 100%; /* largura */
+    height: 95px; /* altura */
+    background: #ffffff;
+    display: flex; /* como o elemento se organiza: flex, grid, block, none (esconde)… */
+    align-items: center; /* alinha os itens na vertical (no flex) */
+    justify-content: space-between; /* distribui os itens na horizontal (no flex) */
+    padding: 0 max(40px, calc((100% - 1160px) / 2));
+    /* Mantém o cabeçalho visível no topo durante a rolagem */
+    position: sticky; /* forma de posicionar: relative, absolute, sticky… */
+    top: 0; /* distância do topo */
+    z-index: 10; /* ordem de camadas: número maior fica por cima */
+    box-shadow: 0 4px 22px rgba(6, 28, 92, 0.07); /* sombra em volta do elemento */
+}
+/*logo*/
+/*Container da logo:agrupa a logo e o nome da empresa, centralizando-os verticalmente com um pequeno espaçamento */
+.logoimg {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* espaço entre os itens do flex ou grid */
+    text-decoration: none; /* none tira o sublinhado dos links */
+}
+
+/* Define dimensões fixas para a imagem da logo, evitando distorções */
+.logo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain; /* cover preenche sem distorcer; contain mostra a imagem inteira */
+}
+
+/* Estilo do texto da logo: define cor azul escura e deixa em negrito */
+.logoimg span {
+    color: #1a2c5e;
+    font-size: 15px; /* tamanho da letra */
+    font-weight: 800; /* grossura da letra (400 normal, 700 negrito) */
+    letter-spacing: 0.5px; /* espaço entre as letras */
+}
+/*Menu de navegação*/
+/* Container do menu: organiza os itens horizontalmente e centraliza verticalmente */
+.sub-items {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* espaço entre os itens do menu */
+    list-style: none; /* remove os marcadores da lista */
+}
+/* Estilo dos links do menu: remove sublinhado, define cor, tamanho e peso da fonte, e adiciona transição suave para mudança de cor */
+.sub-items a {
+    text-decoration: none; /* remove o sublinhado dos links */
+    letter-spacing: 1px;
+    color: #555f79; /* cor do texto dos links */
+    font-size: 11px; /* tamanho da letra */
+    font-weight: 700; /* grossura da letra */
+    transition: color 0.2s ease; /* transição suave para a mudança de cor */
+}
+/*Muda a cor do link quando o mouse passa por cima, indicando interatividade */
+/*hover: pseudo-classe que aplica estilos quando o mouse está sobre o elemento */
+.sub-items a:hover {
+        color: #1a3ad6;
+}
+/* Estilo do botão de inscrição: define cor de fundo, cor do texto, arredondamento dos cantos, padding e transição suave para mudança de cor */
+.button { display: inline-block;
+    background: #112d8a;
+    color: #ffffff !important; /* !important força a aplicação da cor, mesmo que haja outras regras conflitantes */
+    padding: 13px 22px;
+    border-radius: 4px; /* arredonda os cantos */
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border: none; /* borda: espessura, estilo e cor */
+    cursor: pointer; /* pointer mostra a mãozinha ao passar o mouse */
+    transition: background 0.2s ease;
+}
+    /*Clareia um pouco o fundo ao passar o mouse por cima, indicando interatividade */
+.button:hover {
+        background: #1a3ad6;
+}
