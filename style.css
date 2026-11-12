@@ -207,4 +207,67 @@ header {
         font-weight: 700;
         letter-spacing: 2px;
     }
+
+    /*Container principal da seção */
+    .sobre-container{
+        display:flex;
+        align-items: centro; /* Centraliza verticalmente a foto e o texto */
+        justify-content: space-between;
+        gap: 50px; /*espaçp entre a foto e o texto */
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        background-color: #f4f4f6; /* Fundo cinza bem claro */
+        }
+
+        /* Estilo da imagem na esquerda */
+        .about-imagem img{
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        /* Bloco de texto na direita */
+        .about-content{
+            flex: 1;
+        }
+
+        /* Subtítulo pequeno acima do título */
+        .top-subtilte{
+            color: #1d2ed8; /* Azul vibrante */
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        /* Título principal: "O PRIMEIRO PASSO COMEÇA AQUI" */
+        .main-tilte {
+        font-family: Impact, 'Arial Narrow Bold', sans-serif; /* Ou fonte condensada como Oswald/Anton */
+        font-size: 36px;
+        font-weight: 900;
+        color: #111827; /* Preto/cinza bem escuro */
+        text-transform: uppercase;
+        line-height: 1.1;
+        margin-bottom: 20px;    
+        }
+        
+        /* Destaque azul na segunda parte do título ("COMEÇA AQUI") */
+        .main-title span {
+           color: #1d4ed8;
+        }
+
+        /* Parágrafos descritivos */
+        .description-text {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            color: #4b5563;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        
+        
     
