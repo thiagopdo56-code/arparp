@@ -99,3 +99,46 @@ body {
 .button:hover {
         background: #1a3ad6;
 }
+/* Banner principal azul*/
+/* Àrea pricipal: ocupa o restante de altura da tela, aplica umgradiente azul bem escuro (navy) e corta elementos que ultrapassam a área */
+.container {
+    min-height: calc(100vh - 95px); /* altura mínima: altura da tela menos a altura do cabeçalho */
+    background: radial-gradient(circle at 85% 50% #0d2987 0%, #081a5e 50%, #05103a 100%); /* gradiente azul escuro */
+    overflow: hidden; /* esconde elementos que ultrapassam a área */
+    color:#ffffff;
+    width: 100%;
+    position: relative; /* posição relativa para permitir posicionamento absoluto de elementos filhos */
+}
+/* Efeito de circulos concêntricos no funo (Direita) */
+/* Usa um pseudo-elemento (::after) para criar círculos concêntricos com bordas brancas e opacidade reduzida, posicionados no canto inferior direito */
+/* Um "::after" cria um elemento virtual após o conteúdo do elemento selecionado, permitindo adicionar efeitos visuais sem alterar o HTML */
+.container::after {
+    content: ""; /* conteúdo criado pelo CSS (obrigatório no ::after) */
+    position: absolute;
+    right: -100px; /* distância da direita */
+    top: 50%;
+    transform: translateY(-50%); /* move, gira ou aumenta o elemento sem empurrar os outros */
+    width: 700px;
+    height: 700px;
+    /* Primeira linha fina do círculo interno */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    /* Segunda linha fina externa feita com box-shadow de 1px de espessura (180 transparente + 181 com cor) */
+    box-shadow: 
+        0 0 0 180px transparent, 
+        0 0 0 181px rgba(255, 255, 255, 0.05);
+    /* pointer-events: none deixa o clique passar através */
+    pointer-events: none; /* Garante que o efeito de fundo não bloqueie cliques no texto */
+}
+/* Conteúdo dentor do banner */
+/* Organiza os textos dentro do banner: centraliza com limite máximo de largura, organiza em coluna e joga elementos pra cima (z-index) */
+.hero-content {
+    max-width: 1160px; /* Largura máxima */
+    min-height: calc(100vh - 95px);
+    margin: 0 auto;
+    padding: 70px 20px 45px;
+    display: flex;
+    flex-direction: column; /* column empilha os items um embaixo do outro */
+    position: relative;
+    z-index: 2;
+}
