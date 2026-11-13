@@ -197,6 +197,234 @@
                     </a>
                     <div class="card-texto">
                         <p class="card-etiqueta">TREINOS E COMPETIÇÕES</p>
+                        <h3><a href="Passos_que_Viram_Marcas.html">Passos que viram marcas</a></h3>
+              <p class="card-descricao">Rotina, dedicação e espírito de equipe: nossos atletas seguem treinando para novos desafios.</p>
+              <a class="card-seta" href="Passos_que_Viram_Marcas.html" aria-label="Ver a página Passos que viram marcas">↗</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Destaques: card com foto ao lado do texto -->
+        <h2 class="titulo-secao titulo-destaques">DESTAQUES</h2>
+        <!-- Card de destaque: duas classes, a segunda deixa a foto ao lado do texto -->
+        <article class="card-novidade card-destaque">
+          <div class="card-imagem">
+            <img src="img/jeovany_bronze_1500.png" alt="Jeovane da Rocha mostrando a medalha de bronze, com a camiseta da ARPA-RP" loading="lazy" />
+          </div>
+          <div class="card-texto">
+            <p class="card-etiqueta">12 DE OUTUBRO</p>
+            <h3>Bronze nos 1.500m!</h3>
+            <p class="card-descricao">
+              Jeovane da Rocha conquistou a medalha de bronze nos 1.500 metros
+              masculino no dia 12 de outubro, nos Jogos Abertos do Interior!
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- fim seção novidades -->
+
+    <!-- inicio seção diretoria -->
+    <!-- Seção Diretoria: carrossel com setas feito só com HTML e CSS -->
+    <section class="secao-diretoria" id="diretoria">
+      <div class="conteudo-central">
+        <p class="subtitulo-secao">QUEM FAZ ACONTECER</p>
+        <h2 class="titulo-secao">DIRETORIA <span class="destaque">E EQUIPE</span></h2>
+       
+
+        <div class="carrossel-setas carrossel-diretoria">
+          <!-- input radio: só um pode estar marcado por vez; cada um representa uma pessoa. O CSS move o trilho conforme o radio marcado -->
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-1" checked aria-label="Mostrar item 1 de 5"/>
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-2" aria-label="Mostrar item 2 de 5"/>
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-3" aria-label="Mostrar item 3 de 5"/>
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-4" aria-label="Mostrar item 4 de 5"/>
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-5" aria-label="Mostrar item 5 de 5"/>
+          <!-- janela: mostra 1 pessoa por vez e esconde o resto (overflow: hidden) -->
+          <div class="slides-janela">
+            <!-- trilho: todos os slides lado a lado; ele anda para a esquerda com transform -->
+            <div class="slides-trilho">
+              <div class="slide">
+                <article class="membro">
+                <img src="img/diretoria_treinador_peter.webp" alt="Peter Camargo, treinador da ARPA-RP" loading="lazy"/>
+                <div class="membro-texto">
+                  <h3>Peter Camargo</h3>
+                  <p>COORDENADOR E TREINADOR</p>
+                </div>
+                </article>
+                <!-- setas: labels que marcam o radio anterior (for) ou o próximo; ‹ e › são os desenhos das setas -->
+                <label class="seta seta-esq" for="diretoria-5" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="diretoria-2" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <article class="membro">
+                <img src="img/diretoria_diretor_cleber.webp" alt="Cleber, diretor da ARPA-RP" loading="lazy"/>
+                <div class="membro-texto">
+                  <h3>Cleber</h3>
+                  <p>DIRETOR</p>
+                </div>
+                </article>
+                <label class="seta seta-esq" for="diretoria-1" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="diretoria-3" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <article class="membro">
+                <img src="img/diretoria_diretor_edinho.webp" alt="Edinho, diretor da ARPA-RP" loading="lazy"/>
+                <div class="membro-texto">
+                  <h3>Edinho</h3>
+                  <p>DIRETOR</p>
+                </div>
+                </article>
+                <label class="seta seta-esq" for="diretoria-2" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="diretoria-4" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <article class="membro">
+                <img src="img/diretoria_filmmaker_gabriel.webp" alt="Gabriel, filmmaker da ARPA-RP" loading="lazy"/>
+                <div class="membro-texto">
+                  <h3>Gabriel</h3>
+                  <p>FILMMAKER</p>
+                </div>
+                </article>
+                <label class="seta seta-esq" for="diretoria-3" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="diretoria-5" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <article class="membro">
+                <img src="img/diretoria_filmmaker_lucas.webp" alt="Lucas, filmmaker da ARPA-RP" loading="lazy"/>
+                <div class="membro-texto">
+                  <h3>Lucas</h3>
+                  <p>FILMMAKER</p>
+                </div>
+                </article>
+                <label class="seta seta-esq" for="diretoria-4" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="diretoria-1" aria-label="Próximo">&#8250;</label>
+              </div>
+            </div>
+          </div>
+          <!-- bolinhas: cada label marca um radio e mostra em qual pessoa está -->
+          <div class="pontos">
+            <label for="diretoria-1" aria-label="Ir para o item 1"></label>
+            <label for="diretoria-2" aria-label="Ir para o item 2"></label>
+            <label for="diretoria-3" aria-label="Ir para o item 3"></label>
+            <label for="diretoria-4" aria-label="Ir para o item 4"></label>
+            <label for="diretoria-5" aria-label="Ir para o item 5"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fim seção diretoria -->
+
+    <!-- inicio seção patrocinadores -->
+    <!-- Seção Patrocinadores: faixa que anda sozinha com @keyframes no CSS -->
+    <section class="secao-apoiadores" id="patrocinadores">
+      <div class="titulo-apoiadores">
+        <p class="subtitulo-secao">QUEM CAMINHA COM A GENTE</p>
+        <h2 class="titulo-secao">PATROCINADORES <span class="destaque">E APOIADORES</span></h2>
+      </div>
+
+      <!-- A lista aparece duas vezes: quando anda 50%, a segunda cópia ocupa o lugar da primeira e a animação recomeça sem salto -->
+      <div class="faixa">
+        <div class="faixa-trilho">
+          <div class="faixa-grupo">
+            <div class="apoiador"><span class="apoiador-letra">A</span>arcomarrp</div>
+            <div class="apoiador"><span class="apoiador-letra">R</span>reativamove</div>
+            <div class="apoiador"><span class="apoiador-letra">M</span>maribellotti</div>
+            <div class="apoiador"><span class="apoiador-letra">C</span>capellaealine</div>
+            <div class="apoiador"><span class="apoiador-letra">T</span>techmess_rp</div>
+            <div class="apoiador"><span class="apoiador-letra">N</span>neusa.massoterapeuta</div>
+            <div class="apoiador"><span class="apoiador-letra">S</span>suco_sabor_saude</div>
+            <div class="apoiador"><span class="apoiador-letra">I</span>institutogiulianofverdi</div>
+            <div class="apoiador"><span class="apoiador-letra">M</span>matheuslolii</div>
+            <div class="apoiador"><span class="apoiador-letra">G</span>grupomacali</div>
+          </div>
+          <!-- aria-hidden: o leitor de tela ignora a cópia para não ler os nomes duas vezes -->
+          <div class="faixa-grupo" aria-hidden="true">
+            <div class="apoiador"><span class="apoiador-letra">A</span>arcomarrp</div>
+            <div class="apoiador"><span class="apoiador-letra">R</span>reativamove</div>
+            <div class="apoiador"><span class="apoiador-letra">M</span>maribellotti</div>
+            <div class="apoiador"><span class="apoiador-letra">C</span>capellaealine</div>
+            <div class="apoiador"><span class="apoiador-letra">T</span>techmess_rp</div>
+            <div class="apoiador"><span class="apoiador-letra">N</span>neusa.massoterapeuta</div>
+            <div class="apoiador"><span class="apoiador-letra">S</span>suco_sabor_saude</div>
+            <div class="apoiador"><span class="apoiador-letra">I</span>institutogiulianofverdi</div>
+            <div class="apoiador"><span class="apoiador-letra">M</span>matheuslolii</div>
+            <div class="apoiador"><span class="apoiador-letra">G</span>grupomacali</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fim seção patrocinadores -->
+
+    <!-- inicio seção mapa -->
+    <!-- Seção Mapa -->
+    <section class="secao-mapa" id="mapa">
+      <div class="conteudo-central">
+        <p class="subtitulo-secao">VENHA NOS VISITAR</p>
+        <h2 class="titulo-secao">ONDE FICA</h2>
+        <p class="endereco">
+          Centro Esportivo do Eldorado<br />
+          Rua Três Lagoas, 722 — esquina com Rua Nova Granada<br />
+          Bairro Eldorado · São José do Rio Preto — SP
+        </p>
+        <p class="endereco">Um espaço para descobrir a força do seu movimento.</p>
+        <div class="moldura-mapa">
+          <!-- iframe: mostra outra página dentro desta, aqui o mapa do Google Maps -->
+          <iframe src="https://www.google.com/maps/embed?pb=!4v1794437292849!6m8!1m7!1sqsPSdL8BQTktlweswlVt3Q!2m2!1d-20.78606334865074!2d-49.39975207491702!3f42.84355793179989!4f-8.03021691780674!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- fim seção mapa -->
+
+    <!-- inicio seção inscrição -->
+    <!-- Seção Inscrição -->
+    <section class="secao-inscricao" id="inscricao">
+      <div class="conteudo-central inscricao-conteudo">
+        <div>
+          <p class="subtitulo-secao subtitulo-claro">PRONTO PARA COMEÇAR?</p>
+          <h2 class="titulo-secao">GOSTARIA DE SE INSCREVER?</h2>
+          <p class="inscricao-texto">Chame no nosso WhatsApp e venha fazer parte da ARPA-RP.</p>
+        </div>
+        <!-- Link do WhatsApp (wa.me); target="_blank" abre em nova aba e rel="noopener" deixa isso mais seguro -->
+          <a class="botao-whatsapp" href="https://wa.me/5517996532933?text=Quero%20me%20inscrever" target="_blank" rel="noopener">FALAR NO WHATSAPP ↗</a>
+          </div>
+    </section>
+    <!-- fim seção inscrição -->
+
+    <!-- inicio rodapé -->
+    <!-- footer: rodapé da página -->
+    <footer class="rodape">
+      <!-- Créditos do projeto acadêmico -->
+      <div class="conteudo-central rodape-credito">
+        <span class="fatec-fundo">
+          <img src="img/fateclogo.webp" alt="Logo da Fatec Rio Preto" loading="lazy" />
+        </span>
+        <div class="credito-texto">
+          <p>
+            Site desenvolvido pelos alunos da Fatec Rio Preto, 1º período de
+            Informática para Negócios, São José do Rio Preto.
+          </p>
+          <div class="credito-integrantes">
+            <!-- Cada link leva ao Instagram de um integrante; alt="" porque o ícone é só decorativo -->
+            <a class="link-instagram" href="https://www.instagram.com/lucasblf_/" target="_blank" rel="noopener">
+              <img src="img/instagram.png" alt="" loading="lazy" />
+              @lucasblf_
+            </a>
+            <a class="link-instagram" href="https://www.instagram.com/lauracarvalho.v/" target="_blank" rel="noopener">
+              <img src="img/instagram.png" alt="" loading="lazy" />
+              @lauracarvalho.v
+            </a>
+            <a class="link-instagram" href="https://www.instagram.com/luispereirathiago/" target="_blank" rel="noopener">
+              <img src="img/instagram.png" alt="" loading="lazy" />
+              @luispereirathiago
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- fim rodapé -->
+  <!-- fim do body e do html: tudo precisa ser fechado com a tag de fechamento (/) -->
+  </body>
+</html>
                     </div>
                
                 </article>
