@@ -1,30 +1,42 @@
-<!DOCTYPE html>
-<!-- Linguagem  -->
+<!doctype html>
+<!-- doctype (linha acima): avisa o navegador que é uma página HTML5 -->
+<!-- html: começo da página; lang="pt-BR" informa que o idioma é português -->
 <html lang="pt-BR">
+  <!-- head: configurações da página, não aparecem na tela -->
+  <head>
 
-<head>
-    <!-- Configuracoes basicas -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo e descricao SEO-->
+    <!-- meta charset: permite acentos e ç -->
+    <meta charset="UTF-8" />
+    <!-- meta viewport: ajusta a página à largura do celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title: nome que aparece na aba do navegador e no Google -->
     <title>ARPA-RP | Associação Riopretense Pró Atletismo</title>
-    <meta name="description" content="Conheça a ARPA-RP, Associação Riopretense Pró Atletismo. 
-    Acompanhe nossos projetos, novidades e iniciativas de incentivo ao atletismo em Rio Preto.">
-    <!-- Ligacoes  -->
-    <link rel="icon" type="webp" href="img/logo_sem_fundo.webp">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- Inicio da seção header -->
+    <!-- meta description: resumo do site que aparece no Google -->
+    <meta
+      name="description"
+      content="Conheça a ARPA-RP, Associação Riopretense Pró Atletismo. 
+    Acompanhe nossos projetos, novidades e iniciativas de incentivo ao atletismo em Rio Preto."
+    />
+    <!-- link icon: ícone (favicon) da aba do navegador -->
+    <link rel="icon" type="image/webp" href="img/logo_sem_fundo.webp" />
+    <!-- link stylesheet: liga o HTML ao arquivo de estilo style.css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!-- body: tudo o que aparece na tela fica aqui dentro -->
+  <body>
+    <!-- Inicio do Header-->
+    <!-- header: cabeçalho com logo e menu (no celular ele some e entra o menu hambúrguer) -->
     <header class="header">
+      <!-- a: link; href="#inicio" volta ao topo da página -->
       <a class="logoimg" href="#inicio">
         <!-- img: imagem; src é o arquivo e alt é a descrição para leitores de tela -->
         <img class="logo" alt="Logo ARPA-RP" src="img/logo_sem_fundo.webp" />
         <span>ARPA-RP</span>
       </a>
 
-         <nav>
+      <!-- nav: área de navegação. ul é uma lista, li é cada item e href="#id" leva até a seção com aquele id -->
+      <nav>
         <ul class="sub-items">
           <li><a href="#projeto">PROJETO</a></li>
           <li><a href="#novidades">NOVIDADES</a></li>
@@ -34,35 +46,37 @@
         </ul>
       </nav>
     </header>
- <!-- Fim da seção header -->
+    <!-- fim do Header-->
 
-          <!-- Segundo rodapé: treinos dos adolescentes atletas de elite -->
-          <div class="info-grid info-grid-elite">
-            <span class="info-titulo">ADOLESCENTES E ATLETAS DE ELITE</span>
-            <div class="info-item">
-              <span class="info-valor">Gratuito</span>
-              <span class="info-rotulo">VALOR</span>
-            </div>
-            <div class="info-item">
-              <span class="info-valor">Ter. e qui.</span>
-              <span class="info-rotulo">DIAS</span>
-            </div>
-            <div class="info-item">
-              <span class="info-valor">17:30 - 21:00</span>
-              <span class="info-rotulo">HORÁRIO</span>
-            </div>
-            <div class="info-item">
-              <span class="info-valor">A partir de 14 anos</span>
-              <span class="info-rotulo">IDADE</span>
-            </div>
-          </div>
+    <!-- inicio seção principal -->
+    <!-- section: um bloco da página. class liga ao CSS e id permite chegar aqui pelo menu -->
+    <section class="container" id="inicio">
+      <div class="hero-content">
+        <!-- div: caixa usada para agrupar e organizar elementos -->
+        <div class="topo-menu">
+          <!-- p: parágrafo de texto -->
+          <p class="localizacao">SÃO JOSÉ DO RIO PRETO · SP</p>
+          <!-- Menu hambúrguer: o input checkbox guarda se o menu está aberto ou fechado -->
+          <input class="menu-check" type="checkbox" id="menu-abrir" aria-label="Abrir menu" />
+          <!-- label: o botão de 3 barrinhas. Clicar nele marca/desmarca o checkbox (for = id do input) -->
+          <label class="menu-botao" for="menu-abrir">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <!-- Lista do menu do celular: o CSS só mostra quando o checkbox está marcado -->
+          <nav class="menu-celular" aria-label="Menu principal">
+            <ul>
+              <li><a href="#projeto">PROJETO</a></li>
+              <li><a href="#novidades">NOVIDADES</a></li>
+              <li><a href="#patrocinadores">APOIADORES</a></li>
+              <li><a href="#mapa">LOCALIZAÇÃO</a></li>
+              <li><a href="#inscricao" class="button">INSCRIÇÃO</a></li>
+            </ul>
+          </nav>
         </div>
 
-      </div>
-    </section>
-    <!-- fim seção professor -->
-
-    <!-- h1: título principal da página. br quebra a linha e span pinta só uma parte do texto -->
+        <!-- h1: título principal da página. br quebra a linha e span pinta só uma parte do texto -->
         <h1>MOVIMENTO QUE<br /><span class="destaque-claro">TRANSFORMA</span></h1>
 
         <p class="descricao">
@@ -103,17 +117,14 @@
               <span class="info-valor">Gratuito</span>
               <span class="info-rotulo">VALOR</span>
             </div>
-
             <div class="info-item">
               <span class="info-valor">Qua. e sex.</span>
               <span class="info-rotulo">DIAS</span>
             </div>
-
             <div class="info-item">
               <span class="info-valor">18:00 - 19:00</span>
               <span class="info-rotulo">HORÁRIO</span>
             </div>
-
             <div class="info-item">
               <span class="info-valor">A partir de 5 anos</span>
               <span class="info-rotulo">IDADE</span>
@@ -127,22 +138,18 @@
               <span class="info-valor">Gratuito</span>
               <span class="info-rotulo">VALOR</span>
             </div>
-
             <div class="info-item">
               <span class="info-valor">Ter. e qui.</span>
               <span class="info-rotulo">DIAS</span>
             </div>
-
             <div class="info-item">
               <span class="info-valor">17:30 - 21:00</span>
               <span class="info-rotulo">HORÁRIO</span>
             </div>
-
             <div class="info-item">
               <span class="info-valor">A partir de 14 anos</span>
               <span class="info-rotulo">IDADE</span>
             </div>
-
           </div>
         </div>
 
@@ -151,53 +158,51 @@
     <!-- fim seção professor -->
 
     <!-- inicio seção novidades -->
-     <!-- Seção Novidades: cards em grid de 3 colunas no celular vira 1) -->
-      <section class="secao-novidades" id="novidades">
-        <div class="conteudo-central">
-            <div class="titulo-novidades">
-            <div>
+    <!-- Seção Novidades: cards em grid de 3 colunas (no celular vira 1) -->
+    <section class="secao-novidades" id="novidades">
+      <div class="conteudo-central">
+        <div class="titulo-novidades">
+          <div>
             <p class="subtitulo-secao">ACOMPANHE A NOSSA JORNADA</p>
             <h2 class="titulo-secao">NOVIDADES</h2>
+          </div>
+          <p class="nota-novidades">Histórias, encontros e conquistas<br />que fazem a diferença.</p>
+        </div>
+
+        <div class="grade-novidades">
+          <!-- article: um conteúdo independente, aqui cada card de notícia. Foto, título e seta levam à página da novidade -->
+          <article class="card-novidade">
+            <a class="card-imagem" href="Festa_do_Dia_das_Criancas.html">
+              <!-- loading="lazy": a imagem só carrega quando chega perto da tela, deixando o site mais rápido -->
+              <img src="img/brinquedo.webp" alt="Crianças brincando em um tobogã inflável na pista de atletismo" loading="lazy" />
+            </a>
+            <div class="card-texto">
+              <p class="card-etiqueta">23 DE OUTUBRO</p>
+              <!-- h3: subtítulo do card; o link leva para outra página .html -->
+              <h3><a href="Festa_do_Dia_das_Criancas.html">Festa do Dia das Crianças</a></h3>
+              <p class="card-descricao">Um dia especial para celebrar a alegria, a amizade e cada pequena grande conquista dos nossos atletas.</p>
+              <!-- aria-label: descreve o link para quem usa leitor de tela -->
+              <a class="card-seta" href="Festa_do_Dia_das_Criancas.html" aria-label="Ver a página Festa do Dia das Crianças">↗</a>
             </div>
-            <P class="nota-novidades">Histórias, encontros e conquistas<br />que fazem a diferença.</p>
+          </article>
+          <article class="card-novidade">
+            <a class="card-imagem" href="Festa_de_Fim_de_Ano.html">
+              <img src="img/carreta.webp" alt="Carreta iluminada chegando à festa da ARPA-RP à noite" loading="lazy" />
+            </a>
+            <div class="card-texto">
+              <p class="card-etiqueta">COMUNIDADE ARPA-RP</p>
+              <h3><a href="Festa_de_Fim_de_Ano.html">Festa de fim de ano</a></h3>
+              <p class="card-descricao">Encerramos mais uma temporada com gratidão, integração e muita celebração junto das famílias.</p>
+              <a class="card-seta" href="Festa_de_Fim_de_Ano.html" aria-label="Ver a página Festa de fim de ano">↗</a>
             </div>
-
-            <div class="grade-novidades">
-                <!-- article: um conteúdo indpendente, aqui cada card de notícias. Foto, título e seta levam à página da novidade -->
-                <article class="card-novidade">
-                <a class="card-iamagem" href="Festa_do_Dia_das_Criancas.html">
-                <!-- loading="lazy": a imagem só carrega quando chega perto da tela, deixando o site mais rápido -->
-                <img src="img/brinquedo.webp" alt="Crianças brincando em um tobogã inflável na pista de atletismo" loading="lazy"/>
-                </a>
-                <div class="card-texto">
-                <p class="card-etiqueta">23 DE OUTUBRO</p>
-                <!-- h3: subtítulo do card; o link leva para outra página .html -->
-                <h3><a href="Festa_do_Dia_das_Criancas.html">Festa do Dia das Crianças</a></h3>
-                <p class="card-descricao">Um dia especial para celebrar a alegria, a amizade e cada pequena grande conquista dos nossos atletas.</p>
-                <!-- aria-label: descreve o link para quem usa leitor de tela -->
-                <a class="card-seta" href="Festa_do_Dia_das_Criancas.html" aria-label="Ver a página Festa do Dia das Crianças">↗</a> 
-                </div>
-                </article>
-
-                <article class="card-novidade">
-                    <a class="card-imagem" href="Festa_de_Fim_de_Ano.html">
-                        <img src="img/carreta.webp" alt="Carreta iluminada chegando à festa da ARPA-RP à noite" loading="lazy"/>
-                    </a>
-                    <div class="card-texto">
-                        <p class="card-etiqueta">COMUNIDADE ARPA-RP</p>
-                        <h3><a href="Festa_de_Fim_de_Ano.html"Festa de fim de ano></a></h3>
-                        <p class="card-descricao">Encerramos mais uma temporada com gratidão, integração muita celebração junto das famílias.</p>
-                        <a class="card-seta" href="Festa_de_Fim_de_Ano.html" aria-label="Ver a página Festa de fim de ano">↗</a>
-                    </div>
-                    </article>
-
-                <article class="card-novidades">
-                    <a class="card-seta" href="Passos_que_Viram_Marcas.html">
-                        <img src="img/criancas.webp" alt="Grupo de crianças e adolescentes da ARPA-RP  reunidos na pista de atletismo" loading="lazy"/>
-                    </a>
-                    <div class="card-texto">
-                        <p class="card-etiqueta">TREINOS E COMPETIÇÕES</p>
-                        <h3><a href="Passos_que_Viram_Marcas.html">Passos que viram marcas</a></h3>
+          </article>
+          <article class="card-novidade">
+            <a class="card-imagem" href="Passos_que_Viram_Marcas.html">
+              <img src="img/criancas.webp" alt="Grupo de crianças e adolescentes da ARPA-RP reunidos na pista de atletismo" loading="lazy" />
+            </a>
+            <div class="card-texto">
+              <p class="card-etiqueta">TREINOS E COMPETIÇÕES</p>
+              <h3><a href="Passos_que_Viram_Marcas.html">Passos que viram marcas</a></h3>
               <p class="card-descricao">Rotina, dedicação e espírito de equipe: nossos atletas seguem treinando para novos desafios.</p>
               <a class="card-seta" href="Passos_que_Viram_Marcas.html" aria-label="Ver a página Passos que viram marcas">↗</a>
             </div>
@@ -234,18 +239,18 @@
 
         <div class="carrossel-setas carrossel-diretoria">
           <!-- input radio: só um pode estar marcado por vez; cada um representa uma pessoa. O CSS move o trilho conforme o radio marcado -->
-          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-1" checked aria-label="Mostrar item 1 de 5"/>
-          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-2" aria-label="Mostrar item 2 de 5"/>
-          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-3" aria-label="Mostrar item 3 de 5"/>
-          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-4" aria-label="Mostrar item 4 de 5"/>
-          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-5" aria-label="Mostrar item 5 de 5"/>
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-1" checked aria-label="Mostrar item 1 de 5" />
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-2" aria-label="Mostrar item 2 de 5" />
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-3" aria-label="Mostrar item 3 de 5" />
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-4" aria-label="Mostrar item 4 de 5" />
+          <input class="slide-radio" type="radio" name="diretoria" id="diretoria-5" aria-label="Mostrar item 5 de 5" />
           <!-- janela: mostra 1 pessoa por vez e esconde o resto (overflow: hidden) -->
           <div class="slides-janela">
             <!-- trilho: todos os slides lado a lado; ele anda para a esquerda com transform -->
             <div class="slides-trilho">
               <div class="slide">
                 <article class="membro">
-                <img src="img/diretoria_treinador_peter.webp" alt="Peter Camargo, treinador da ARPA-RP" loading="lazy"/>
+                <img src="img/diretoria_treinador_peter.webp" alt="Peter Camargo, treinador da ARPA-RP" loading="lazy" />
                 <div class="membro-texto">
                   <h3>Peter Camargo</h3>
                   <p>COORDENADOR E TREINADOR</p>
@@ -257,7 +262,7 @@
               </div>
               <div class="slide">
                 <article class="membro">
-                <img src="img/diretoria_diretor_cleber.webp" alt="Cleber, diretor da ARPA-RP" loading="lazy"/>
+                <img src="img/diretoria_diretor_cleber.webp" alt="Cleber, diretor da ARPA-RP" loading="lazy" />
                 <div class="membro-texto">
                   <h3>Cleber</h3>
                   <p>DIRETOR</p>
@@ -268,7 +273,7 @@
               </div>
               <div class="slide">
                 <article class="membro">
-                <img src="img/diretoria_diretor_edinho.webp" alt="Edinho, diretor da ARPA-RP" loading="lazy"/>
+                <img src="img/diretoria_diretor_edinho.webp" alt="Edinho, diretor da ARPA-RP" loading="lazy" />
                 <div class="membro-texto">
                   <h3>Edinho</h3>
                   <p>DIRETOR</p>
@@ -279,7 +284,7 @@
               </div>
               <div class="slide">
                 <article class="membro">
-                <img src="img/diretoria_filmmaker_gabriel.webp" alt="Gabriel, filmmaker da ARPA-RP" loading="lazy"/>
+                <img src="img/diretoria_filmmaker_gabriel.webp" alt="Gabriel, filmmaker da ARPA-RP" loading="lazy" />
                 <div class="membro-texto">
                   <h3>Gabriel</h3>
                   <p>FILMMAKER</p>
@@ -290,7 +295,7 @@
               </div>
               <div class="slide">
                 <article class="membro">
-                <img src="img/diretoria_filmmaker_lucas.webp" alt="Lucas, filmmaker da ARPA-RP" loading="lazy"/>
+                <img src="img/diretoria_filmmaker_lucas.webp" alt="Lucas, filmmaker da ARPA-RP" loading="lazy" />
                 <div class="membro-texto">
                   <h3>Lucas</h3>
                   <p>FILMMAKER</p>
@@ -385,8 +390,8 @@
           <p class="inscricao-texto">Chame no nosso WhatsApp e venha fazer parte da ARPA-RP.</p>
         </div>
         <!-- Link do WhatsApp (wa.me); target="_blank" abre em nova aba e rel="noopener" deixa isso mais seguro -->
-          <a class="botao-whatsapp" href="https://wa.me/5517996532933?text=Quero%20me%20inscrever" target="_blank" rel="noopener">FALAR NO WHATSAPP ↗</a>
-          </div>
+        <a class="botao-whatsapp" href="https://wa.me/5517996532933?text=Quero%20me%20inscrever" target="_blank" rel="noopener">FALAR NO WHATSAPP ↗</a>
+      </div>
     </section>
     <!-- fim seção inscrição -->
 
@@ -424,15 +429,4 @@
     <!-- fim rodapé -->
   <!-- fim do body e do html: tudo precisa ser fechado com a tag de fechamento (/) -->
   </body>
-</html>
-                    </div>
-               
-                </article>
-
-            </div>
-        </div>
-      </section>
-
-</body>
-
 </html>
