@@ -1,4 +1,8 @@
-# arparp
-Este repositório contém o código-fonte da plataforma web desenvolvida para a ARPA (Associação Riopretense Pró-Atletismo), entidade sediada em São José do Rio Preto - SP. O sistema tem como finalidade centralizar as informações institucionais da associação, divulgar eventos de atletismo e facilitar a comunicação com os atletas e a comunidade local.
-Laura 09/11 alteraçõesda logo em html e css
+mudança feita pelo thiago
+teste laura 28/10/2026
 
+# Mudanças feita pelo thiago 02/11/2026
+
+1 converti imagens jpg para webp e adicionei ao projeto 
+2 introduzi mudanças no html
+3 introduzi mudanças no css

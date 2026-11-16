@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festa do Dia das Crianças | ARPA-RP</title>
+    <meta name="description" content="Um dia especial para celebrar a alegria, a amizade e cada pequena grande conquista dos nossos atletas." />
+    <link rel="icon" type="image/webp" href="img/logo_sem_fundo.webp" />
+    <!-- Usa o mesmo CSS da página inicial -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Inicio do Header-->
+    <header class="header">
+      <a class="logoimg" href="index.html">
+        <img class="logo" alt="Logo ARPA-RP" src="img/logo_sem_fundo.webp" />
+        <span>ARPA-RP</span>
+      </a>
+
+      <!-- Menu: cada link aponta para o id de uma seção da página -->
+      <nav>
+        <ul class="sub-items">
+          <li><a href="index.html#projeto">PROJETO</a></li>
+          <li><a href="index.html#novidades">NOVIDADES</a></li>
+          <li><a href="index.html#patrocinadores">APOIADORES</a></li>
+          <li><a href="index.html#mapa">LOCALIZAÇÃO</a></li>
+          <li><a href="index.html#inscricao" class="button">INSCRIÇÃO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- fim do Header-->
+
+
+    <!-- inicio banner da página -->
+    <section class="pagina-banner">
+      <div class="conteudo-central">
+        <div class="topo-menu">
+          <a class="botao-voltar" href="index.html">← VOLTAR PARA A PÁGINA INICIAL</a>
+          <!-- Menu do celular: o checkbox guarda o estado aberto/fechado e o CSS mostra a lista -->
+          <input class="menu-check" type="checkbox" id="menu-abrir" aria-label="Abrir menu" />
+          <label class="menu-botao" for="menu-abrir">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <nav class="menu-celular" aria-label="Menu principal">
+            <ul>
+              <li><a href="index.html#projeto">PROJETO</a></li>
+              <li><a href="index.html#novidades">NOVIDADES</a></li>
+              <li><a href="index.html#patrocinadores">APOIADORES</a></li>
+              <li><a href="index.html#mapa">LOCALIZAÇÃO</a></li>
+              <li><a href="index.html#inscricao" class="button">INSCRIÇÃO</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="subtitulo-secao subtitulo-claro">23 DE OUTUBRO</p>
+        <h1>Festa do Dia das Crianças</h1>
+        <p class="pagina-descricao">Um dia especial para celebrar a alegria, a amizade e cada pequena grande conquista dos nossos atletas.</p>
+      </div>
+    </section>
+    <!-- fim banner da página -->
+
+    <!-- inicio galeria de fotos -->
+    <section class="pagina-galeria">
+      <div class="conteudo-central">
+        <!-- Para adicionar uma foto: copie um bloco <div class="slide"> e troque o src, o alt e os números das setas -->
+        <!-- Carrossel só com CSS: cada "radio" guarda qual item está aparecendo e as setas são labels que marcam o radio anterior ou o próximo -->
+        <div class="carrossel-setas carrossel-fotos">
+          <input class="slide-radio" type="radio" name="festa" id="festa-1" checked aria-label="Mostrar item 1 de 6" />
+          <input class="slide-radio" type="radio" name="festa" id="festa-2" aria-label="Mostrar item 2 de 6" />
+          <input class="slide-radio" type="radio" name="festa" id="festa-3" aria-label="Mostrar item 3 de 6" />
+          <input class="slide-radio" type="radio" name="festa" id="festa-4" aria-label="Mostrar item 4 de 6" />
+          <input class="slide-radio" type="radio" name="festa" id="festa-5" aria-label="Mostrar item 5 de 6" />
+          <input class="slide-radio" type="radio" name="festa" id="festa-6" aria-label="Mostrar item 6 de 6" />
+          <div class="slides-janela">
+            <div class="slides-trilho">
+              <div class="slide">
+                <img src="img/brinquedo.webp" alt="Crianças brincando em um tobogã inflável na pista de atletismo" loading="lazy" />
+                <label class="seta seta-esq" for="festa-6" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="festa-2" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <img src="img/chaves.webp" alt="Criança cumprimentando um personagem fantasiado na festa" loading="lazy" />
+                <label class="seta seta-esq" for="festa-1" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="festa-3" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <img src="img/personagens.webp" alt="Dois personagens fantasiados se apresentando na festa" loading="lazy" />
+                <label class="seta seta-esq" for="festa-2" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="festa-4" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <img src="img/caixabombom.webp" alt="Equipe da ARPA-RP ao lado de uma mesa com caixas de bombom" loading="lazy" />
+                <label class="seta seta-esq" for="festa-3" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="festa-5" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <img src="img/doces_empresa.webp" alt="Equipe de uma empresa de doces ao lado de sua barraca na pista durante a festa" loading="lazy" />
+                <label class="seta seta-esq" for="festa-4" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="festa-6" aria-label="Próximo">&#8250;</label>
+              </div>
+              <div class="slide">
+                <img src="img/organizacao.webp" alt="Equipe da ARPA-RP reunida na pista com as caixas de bombom" loading="lazy" />
+                <label class="seta seta-esq" for="festa-5" aria-label="Anterior">&#8249;</label>
+                <label class="seta seta-dir" for="festa-1" aria-label="Próximo">&#8250;</label>
+              </div>
+            </div>
+          </div>
+          <div class="pontos">
+            <label for="festa-1" aria-label="Ir para o item 1"></label>
+            <label for="festa-2" aria-label="Ir para o item 2"></label>
+            <label for="festa-3" aria-label="Ir para o item 3"></label>
+            <label for="festa-4" aria-label="Ir para o item 4"></label>
+            <label for="festa-5" aria-label="Ir para o item 5"></label>
+            <label for="festa-6" aria-label="Ir para o item 6"></label>
+          </div>
+        </div>
+        <!-- Texto contando como foi o evento -->
+        <div class="pagina-texto">
+          <h2>Uma noite especial, repleta de alegria, amor e gratidão!</h2>
+          <p>Na sexta-feira, 23 de outubro, em comemoração ao Mês das Crianças, proporcionamos uma noite inesquecível de alegria, diversão e união para as crianças e famílias do Projeto ARPA–SMEL Correndo para o Futuro, na Pista de Atletismo do Eldorado. Foi uma noite de muitos sorrisos, diversão e emoção!</p>
+
+          <h3>O que teve na festa</h3>
+          <ul>
+            <li>Brinquedo inflável</li>
+            <li>Pipoca, algodão-doce e raspadinha</li>
+            <li>Passeio de carreta com personagens</li>
+            <li>Caixas de bombons para encerrar a noite</li>
+          </ul>
+
+          <h3>Nosso projeto vai muito além do esporte</h3>
+          <p>Mais do que correr, brincar e aprender, buscamos transmitir valores como respeito, disciplina, amizade, inclusão e, principalmente, gratidão. Como sempre reforça a professora Nayne, é fundamental ensinar nossas crianças a valorizar e agradecer por tudo aquilo que recebem.</p>
+          <p>Nosso propósito é formar não apenas atletas, mas cidadãos melhores, fortalecendo os laços entre crianças, famílias e toda a comunidade. 💙</p>
+
+          <h3>Agradecimentos</h3>
+          <ul>
+            <li>Ao <strong>Instituto Giuliano Finimundi Verdi</strong> (<a href="https://www.instagram.com/institutogiulianofverdi/" target="_blank" rel="noopener">@institutogiulianofverdi</a>), nosso grande parceiro, patrocinador e incentivador, que acredita e fortalece nosso trabalho, ajudando a tornar possíveis momentos tão especiais.</li>
+            <li>A <strong>Guilherme Piovan</strong> (<a href="https://www.instagram.com/piovan_gui/" target="_blank" rel="noopener">@piovan_gui</a>), pela contribuição com as caixas de bombons.</li>
+            <li>Ao <a href="https://www.instagram.com/suco_sabor_saude/" target="_blank" rel="noopener">@suco_sabor_saude</a>.</li>
+            <li>A <strong>Raquel Martins de Freitas</strong> (<a href="https://www.instagram.com/raquel_martins_freitas/" target="_blank" rel="noopener">@raquel_martins_freitas</a>), do <a href="https://www.instagram.com/eusoquerofotografar/" target="_blank" rel="noopener">@eusoquerofotografar</a>, pelo carinho e pelos lindos registros dessa noite especial.</li>
+            <li>À <strong>Secretaria Municipal de Esportes e Lazer</strong>, aos parceiros, aos colaboradores e a todos que, de alguma forma, contribuem para o crescimento do nosso projeto.</li>
+          </ul>
+
+          <p>Porque o esporte transforma vidas, a inclusão aproxima pessoas e o amor une famílias! Que Deus continue abençoando nossas crianças, suas famílias e todos que fazem parte dessa linda história!</p>
+          <p class="texto-destaque">Juntos somos mais fortes!</p>
+
+          <p class="creditos">📷 Registros: <a href="https://www.instagram.com/_peterwb/" target="_blank" rel="noopener">@_peterwb</a> e <a href="https://www.instagram.com/lucasblf_/" target="_blank" rel="noopener">@lucasblf_</a> (filmmakers)</p>
+        </div>
+        <a class="botao-voltar botao-voltar-escuro" href="index.html">← VOLTAR PARA A PÁGINA INICIAL</a>
+      </div>
+    </section>
+    <!-- fim galeria de fotos -->
+
+    <!-- inicio seção inscrição -->
+    <section class="secao-inscricao">
+      <div class="conteudo-central inscricao-conteudo">
+        <div>
+          <p class="subtitulo-secao subtitulo-claro">PRONTO PARA COMEÇAR?</p>
+          <h2 class="titulo-secao">GOSTARIA DE SE INSCREVER?</h2>
+          <p class="inscricao-texto">Chame no nosso WhatsApp e venha fazer parte da ARPA-RP.</p>
+        </div>
+        <a class="botao-whatsapp" href="https://wa.me/5517996532933?text=Quero%20me%20inscrever" target="_blank" rel="noopener">FALAR NO WHATSAPP ↗</a>
+      </div>
+    </section>
+    <!-- fim seção inscrição -->
+
+    <!-- inicio rodapé -->
+    <footer class="rodape">
+      <!-- Créditos do projeto acadêmico -->
+      <div class="conteudo-central rodape-credito">
+        <span class="fatec-fundo">
+          <img src="img/fateclogo.webp" alt="Logo da Fatec Rio Preto" loading="lazy" />
+        </span>
+        <div class="credito-texto">
+          <p>
+            Site desenvolvido pelos alunos da Fatec Rio Preto, 1º período de
+            Informática para Negócios, São José do Rio Preto.
+          </p>
+          <div class="credito-integrantes">
+            <a class="link-instagram" href="https://www.instagram.com/lucasblf_/" target="_blank" rel="noopener">
+              <img src="img/instagram.png" alt="" loading="lazy" />
+              @lucasblf_
+            </a>
+            <a class="link-instagram" href="https://www.instagram.com/lauracarvalho.v/" target="_blank" rel="noopener">
+              <img src="img/instagram.png" alt="" loading="lazy" />
+              @lauracarvalho.v
+            </a>
+            <a class="link-instagram" href="https://www.instagram.com/luispereirathiago/" target="_blank" rel="noopener">
+              <img src="img/instagram.png" alt="" loading="lazy" />
+              @luispereirathiago
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- fim rodapé -->
+  </body>
+</html>
