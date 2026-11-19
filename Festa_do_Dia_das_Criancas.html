@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <!-- CONFIGURAÇÕES BÁSICAS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Festa do Dia das Crianças | ARPA-RP</title>
     <meta name="description" content="Um dia especial para celebrar a alegria, a amizade e cada pequena grande conquista dos nossos atletas." />
     <link rel="icon" type="image/webp" href="img/logo_sem_fundo.webp" />
-    <!-- Usa o mesmo CSS da página inicial -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/geral.css" />
+    <link rel="stylesheet" href="css/festa-dia-das-criancas.css" />
   </head>
   <body>
-    <!-- Inicio do Header-->
+    <!-- HEADER -->
     <header class="header">
       <a class="logoimg" href="index.html">
         <img class="logo" alt="Logo ARPA-RP" src="img/logo_sem_fundo.webp" />
         <span>ARPA-RP</span>
       </a>
 
-      <!-- Menu: cada link aponta para o id de uma seção da página -->
       <nav>
         <ul class="sub-items">
           <li><a href="index.html#projeto">PROJETO</a></li>
@@ -28,15 +28,14 @@
         </ul>
       </nav>
     </header>
-    <!-- fim do Header-->
 
-
-    <!-- inicio banner da página -->
+    <!-- BANNER DA PÁGINA -->
     <section class="pagina-banner">
       <div class="conteudo-central">
         <div class="topo-menu">
           <a class="botao-voltar" href="index.html">← VOLTAR PARA A PÁGINA INICIAL</a>
-          <!-- Menu do celular: o checkbox guarda o estado aberto/fechado e o CSS mostra a lista -->
+          <!-- MENU DO CELULAR (menu hambúrguer) -->
+          <!-- checkbox invisível guarda se o menu está aberto; o label logo abaixo é o botão de 3 barrinhas -->
           <input class="menu-check" type="checkbox" id="menu-abrir" aria-label="Abrir menu" />
           <label class="menu-botao" for="menu-abrir">
             <span></span>
@@ -58,14 +57,13 @@
         <p class="pagina-descricao">Um dia especial para celebrar a alegria, a amizade e cada pequena grande conquista dos nossos atletas.</p>
       </div>
     </section>
-    <!-- fim banner da página -->
 
-    <!-- inicio galeria de fotos -->
+    <!-- FOTOS E TEXTO -->
     <section class="pagina-galeria">
       <div class="conteudo-central">
-        <!-- Para adicionar uma foto: copie um bloco <div class="slide"> e troque o src, o alt e os números das setas -->
-        <!-- Carrossel só com CSS: cada "radio" guarda qual item está aparecendo e as setas são labels que marcam o radio anterior ou o próximo -->
+        <!-- CARROSSEL DE FOTOS -->
         <div class="carrossel-setas carrossel-fotos">
+          <!-- Cada radio representa uma foto: só um fica marcado e o CSS mostra a foto dele -->
           <input class="slide-radio" type="radio" name="festa" id="festa-1" checked aria-label="Mostrar item 1 de 6" />
           <input class="slide-radio" type="radio" name="festa" id="festa-2" aria-label="Mostrar item 2 de 6" />
           <input class="slide-radio" type="radio" name="festa" id="festa-3" aria-label="Mostrar item 3 de 6" />
@@ -76,6 +74,7 @@
             <div class="slides-trilho">
               <div class="slide">
                 <img src="img/brinquedo.webp" alt="Crianças brincando em um tobogã inflável na pista de atletismo" loading="lazy" />
+                <!-- Setas: o "for" aponta para o radio anterior ou o próximo -->
                 <label class="seta seta-esq" for="festa-6" aria-label="Anterior">&#8249;</label>
                 <label class="seta seta-dir" for="festa-2" aria-label="Próximo">&#8250;</label>
               </div>
@@ -115,7 +114,7 @@
             <label for="festa-6" aria-label="Ir para o item 6"></label>
           </div>
         </div>
-        <!-- Texto contando como foi o evento -->
+        <!-- TEXTO DA NOVIDADE -->
         <div class="pagina-texto">
           <h2>Uma noite especial, repleta de alegria, amor e gratidão!</h2>
           <p>Na sexta-feira, 23 de outubro, em comemoração ao Mês das Crianças, proporcionamos uma noite inesquecível de alegria, diversão e união para as crianças e famílias do Projeto ARPA–SMEL Correndo para o Futuro, na Pista de Atletismo do Eldorado. Foi uma noite de muitos sorrisos, diversão e emoção!</p>
@@ -149,9 +148,8 @@
         <a class="botao-voltar botao-voltar-escuro" href="index.html">← VOLTAR PARA A PÁGINA INICIAL</a>
       </div>
     </section>
-    <!-- fim galeria de fotos -->
 
-    <!-- inicio seção inscrição -->
+    <!-- SEÇÃO INSCRIÇÃO -->
     <section class="secao-inscricao">
       <div class="conteudo-central inscricao-conteudo">
         <div>
@@ -162,11 +160,9 @@
         <a class="botao-whatsapp" href="https://wa.me/5517996532933?text=Quero%20me%20inscrever" target="_blank" rel="noopener">FALAR NO WHATSAPP ↗</a>
       </div>
     </section>
-    <!-- fim seção inscrição -->
 
-    <!-- inicio rodapé -->
+    <!-- RODAPÉ -->
     <footer class="rodape">
-      <!-- Créditos do projeto acadêmico -->
       <div class="conteudo-central rodape-credito">
         <span class="fatec-fundo">
           <img src="img/fateclogo.webp" alt="Logo da Fatec Rio Preto" loading="lazy" />
@@ -193,6 +189,5 @@
         </div>
       </div>
     </footer>
-    <!-- fim rodapé -->
   </body>
 </html>

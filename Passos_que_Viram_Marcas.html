@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
+    <!-- CONFIGURAÇÕES BÁSICAS -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Passos que viram marcas | ARPA-RP</title>
     <meta name="description" content="Rotina, dedicação e espírito de equipe: nossos atletas seguem treinando para novos desafios." />
     <link rel="icon" type="image/webp" href="img/logo_sem_fundo.webp" />
-    <!-- Usa o mesmo CSS da página inicial -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/geral.css" />
+    <link rel="stylesheet" href="css/passos-que-viram-marcas.css" />
   </head>
   <body>
-    <!-- Inicio do Header-->
+    <!-- HEADER -->
     <header class="header">
       <a class="logoimg" href="index.html">
         <img class="logo" alt="Logo ARPA-RP" src="img/logo_sem_fundo.webp" />
         <span>ARPA-RP</span>
       </a>
 
-      <!-- Menu: cada link aponta para o id de uma seção da página -->
       <nav>
         <ul class="sub-items">
           <li><a href="index.html#projeto">PROJETO</a></li>
@@ -28,15 +28,14 @@
         </ul>
       </nav>
     </header>
-    <!-- fim do Header-->
 
-
-    <!-- inicio banner da página -->
+    <!-- BANNER DA PÁGINA -->
     <section class="pagina-banner">
       <div class="conteudo-central">
         <div class="topo-menu">
           <a class="botao-voltar" href="index.html">← VOLTAR PARA A PÁGINA INICIAL</a>
-          <!-- Menu do celular: o checkbox guarda o estado aberto/fechado e o CSS mostra a lista -->
+          <!-- MENU DO CELULAR (menu hambúrguer) -->
+          <!-- checkbox invisível guarda se o menu está aberto; o label logo abaixo é o botão de 3 barrinhas -->
           <input class="menu-check" type="checkbox" id="menu-abrir" aria-label="Abrir menu" />
           <label class="menu-botao" for="menu-abrir">
             <span></span>
@@ -58,27 +57,24 @@
         <p class="pagina-descricao">Rotina, dedicação e espírito de equipe: nossos atletas seguem treinando para novos desafios.</p>
       </div>
     </section>
-    <!-- fim banner da página -->
 
-    <!-- inicio galeria de fotos -->
+    <!-- FOTOS E TEXTO -->
     <section class="pagina-galeria">
       <div class="conteudo-central">
+        <!-- GALERIA DE FOTOS -->
         <div class="galeria">
-          <!-- Para adicionar uma foto: salve o arquivo na pasta img e copie uma linha <img> abaixo, trocando src e alt -->
           <img src="img/criancas.webp" alt="Grupo de crianças e adolescentes da ARPA-RP reunidos na pista de atletismo" loading="lazy" />
         </div>
-        <!-- Texto contando como foi o evento -->
+        <!-- TEXTO DA NOVIDADE -->
         <div class="pagina-texto">
           <p>Rotina, dedicação e espírito de equipe: nossos atletas seguem treinando para novos desafios.</p>
           <p>Os treinos da ARPA-RP acontecem às quartas e sextas-feiras, no Centro Esportivo do Eldorado, com aulas gratuitas para crianças a partir de 6 anos e adolescentes. À frente desse trabalho estão o professor Peter Camargo e Nayne Camargo, que incentivam cada atleta a descobrir sua força.</p>
-          <!-- Complete aqui com competições, resultados e nomes dos atletas -->
         </div>
         <a class="botao-voltar botao-voltar-escuro" href="index.html">← VOLTAR PARA A PÁGINA INICIAL</a>
       </div>
     </section>
-    <!-- fim galeria de fotos -->
 
-    <!-- inicio seção inscrição -->
+    <!-- SEÇÃO INSCRIÇÃO -->
     <section class="secao-inscricao">
       <div class="conteudo-central inscricao-conteudo">
         <div>
@@ -89,11 +85,9 @@
         <a class="botao-whatsapp" href="https://wa.me/5517996532933?text=Quero%20me%20inscrever" target="_blank" rel="noopener">FALAR NO WHATSAPP ↗</a>
       </div>
     </section>
-    <!-- fim seção inscrição -->
 
-    <!-- inicio rodapé -->
+    <!-- RODAPÉ -->
     <footer class="rodape">
-      <!-- Créditos do projeto acadêmico -->
       <div class="conteudo-central rodape-credito">
         <span class="fatec-fundo">
           <img src="img/fateclogo.webp" alt="Logo da Fatec Rio Preto" loading="lazy" />
@@ -120,6 +114,5 @@
         </div>
       </div>
     </footer>
-    <!-- fim rodapé -->
   </body>
 </html>

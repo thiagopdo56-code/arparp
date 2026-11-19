@@ -1,0 +1,618 @@
+/* SEÇÃO INÍCIO */
+.container {
+    width: 100%;
+    background: radial-gradient(circle at 85% 50%, #0d2987 0%, #081a5e 50%, #05103a 100%);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ::after desenha os círculos do fundo sem usar imagem */
+.container::after {
+    content: "";
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 700px;
+    height: 700px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    box-shadow: 0 0 0 180px transparent, 0 0 0 181px rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 70px 20px 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.localizacao {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #9cb5ff;
+    margin-bottom: 24px;
+}
+
+.hero-content h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 92px;
+    font-weight: 900;
+    line-height: 0.88;
+    letter-spacing: -0.5px;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+
+.descricao {
+    max-width: 380px;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #d1deff;
+}
+
+.destaque-claro {
+    color: #bdd0ff;
+}
+
+/* SEÇÃO PROJETO */
+.secao-professor {
+    width: 100%;
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.professor-wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.container-professor {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.imagem-professor {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.professor-conteudo {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.subtitulo-iniciacao {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1a3ad6;
+    margin-bottom: 16px;
+}
+
+.professor-conteudo h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 0.95;
+    color: #081a5e;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.destaque {
+    color: #1a3ad6;
+}
+
+.texto-principal, .texto-secundario {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555f79;
+    margin-bottom: 18px;
+}
+
+.info-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 40px;
+    margin-top: 20px;
+    border-top: 1px solid #eaeef5;
+    padding-top: 24px;
+}
+
+.info-titulo {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #1a3ad6;
+}
+
+.info-grid-elite {
+    margin-top: 0;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-valor {
+    font-size: 13px;
+    font-weight: 700;
+    color: #081a5e;
+}
+
+.info-rotulo {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8c98b2;
+}
+
+/* SEÇÃO NOVIDADES */
+.secao-novidades {
+    background: #eaf0fb;
+    padding: 80px 0;
+}
+
+.titulo-novidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.nota-novidades {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #687b9f;
+    text-align: right;
+}
+
+/* Grid com 3 colunas iguais (1fr = uma parte do espaço) */
+.grade-novidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* transition + :hover: o card sobe suavemente ao passar o mouse */
+.card-novidade {
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(25, 60, 125, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-novidade:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(25, 60, 125, 0.12);
+}
+
+.card-imagem {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.card-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.card-novidade:hover .card-imagem img {
+    transform: scale(1.04);
+}
+
+.card-texto {
+    position: relative;
+    min-height: 190px;
+    padding: 24px 24px 28px;
+}
+
+.card-etiqueta {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #1a3ad6;
+    margin-bottom: 12px;
+}
+
+.card-texto h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #081a5e;
+    margin-bottom: 12px;
+}
+
+.card-descricao {
+    max-width: 270px;
+    font-size: 12px;
+    line-height: 1.65;
+    color: #667898;
+}
+
+.card-seta {
+    position: absolute;
+    right: 22px;
+    bottom: 18px;
+    font-size: 20px;
+    color: #1a3ad6;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.card-novidade:hover .card-seta {
+    transform: translate(3px, -3px);
+}
+
+.card-texto h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.card-texto h3 a:hover {
+    color: #1a3ad6;
+}
+
+a.card-imagem {
+    display: block;
+}
+
+/* DESTAQUES */
+.titulo-destaques {
+    margin: 56px 0 28px;
+}
+
+.card-destaque {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    max-width: 760px;
+}
+
+.card-destaque .card-imagem {
+    aspect-ratio: 4 / 5;
+}
+
+.card-destaque .card-imagem img {
+    object-position: top;
+}
+
+.card-destaque .card-texto {
+    min-height: 0;
+    padding: 24px 40px;
+}
+
+.card-destaque .card-descricao {
+    max-width: 520px;
+    font-size: 15px;
+}
+
+/* SEÇÃO DIRETORIA */
+.secao-diretoria {
+    background: #ffffff;
+    padding: 80px 0 20px;
+}
+
+.membro {
+    background: #eaf0fb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.membro img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: top;
+}
+
+.membro-texto {
+    padding: 16px 18px 20px;
+}
+
+.membro-texto h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #081a5e;
+    margin-bottom: 6px;
+}
+
+.membro-texto p {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #1a3ad6;
+}
+
+.carrossel-diretoria {
+    max-width: 360px;
+}
+
+/* SEÇÃO PATROCINADORES */
+.secao-apoiadores {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 50px;
+    padding: 66px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.titulo-apoiadores {
+    margin-left: max(20px, calc((100vw - 1160px) / 2));
+}
+
+.titulo-apoiadores .titulo-secao {
+    font-size: 40px;
+}
+
+.titulo-apoiadores .destaque {
+    display: block;
+}
+
+/* Faixa dos patrocinadores: a lista está 2 vezes no HTML e a faixa esconde o que passa das bordas */
+.faixa {
+    overflow: hidden;
+}
+
+/* max-content: o trilho fica do tamanho das 2 listas juntas */
+.faixa-trilho {
+    display: flex;
+    width: max-content;
+    animation: rolar 30s linear infinite;
+}
+
+.faixa:hover .faixa-trilho {
+    animation-play-state: paused;
+}
+
+.faixa-grupo {
+    display: flex;
+}
+
+.apoiador {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-right: 60px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #081a5e;
+    white-space: nowrap;
+}
+
+.apoiador-letra {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 2px solid #1a3ad6;
+    border-radius: 50%;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #1a3ad6;
+}
+
+/* Anda 50% (uma lista inteira) e recomeça; como a lista é repetida, o movimento parece infinito */
+@keyframes rolar {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* SEÇÃO MAPA */
+.secao-mapa {
+    background: #ffffff;
+    padding: 80px 0;
+}
+
+.endereco {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #555f79;
+    margin-top: 18px;
+}
+
+.moldura-mapa {
+    height: 410px;
+    margin-top: 32px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(6, 28, 92, 0.08);
+}
+
+.moldura-mapa iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* MENOS ANIMAÇÃO (acessibilidade) */
+@media (prefers-reduced-motion: reduce) {
+    /* SEÇÃO PATROCINADORES */
+    .faixa {
+        overflow-x: auto;
+    }
+
+    .faixa-trilho {
+        animation: none;
+    }
+}
+
+/* RESPONSIVIDADE (celular e tablet) */
+/* Estas regras só valem em telas de até 800px */
+@media (max-width: 800px) {
+    /* SEÇÃO INÍCIO */
+    .container, .hero-content {
+        min-height: 0;
+    }
+
+    .hero-content {
+        padding: 28px 20px 36px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(44px, 14vw, 64px);
+    }
+
+    .descricao {
+        font-size: 15px;
+    }
+
+    /* SEÇÃO PROJETO */
+    .professor-wrapper {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .secao-professor {
+        padding: 56px 20px;
+    }
+
+    .professor-conteudo {
+        width: 100%;
+    }
+
+    .professor-conteudo h2 {
+        font-size: 44px;
+    }
+
+    .texto-principal, .texto-secundario {
+        font-size: 15px;
+    }
+
+    .info-titulo {
+        grid-column: 1 / -1;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px 16px;
+    }
+
+    .info-valor {
+        font-size: 15px;
+    }
+
+    .info-rotulo {
+        font-size: 10px;
+    }
+
+    /* SEÇÃO NOVIDADES */
+    .secao-novidades {
+        padding: 56px 0;
+    }
+
+    .titulo-novidades {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 28px;
+    }
+
+    .nota-novidades {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .grade-novidades {
+        grid-template-columns: 1fr;
+    }
+
+    .card-descricao {
+        max-width: none;
+        font-size: 14px;
+    }
+
+    /* DESTAQUES */
+    .card-destaque {
+        grid-template-columns: 110px 1fr;
+    }
+
+    .card-destaque .card-texto {
+        padding: 14px 16px;
+    }
+
+    .card-destaque .card-texto h3 {
+        font-size: 22px;
+    }
+
+    .card-destaque .card-descricao {
+        font-size: 13px;
+    }
+
+    .titulo-destaques {
+        margin-top: 40px;
+    }
+
+    /* SEÇÃO DIRETORIA */
+    .secao-diretoria {
+        padding: 56px 0 10px;
+    }
+
+    /* SEÇÃO PATROCINADORES */
+    .secao-apoiadores {
+        display: block;
+        padding: 52px 0;
+    }
+
+    .titulo-apoiadores {
+        margin: 0 20px 30px;
+    }
+
+    .titulo-apoiadores .titulo-secao {
+        font-size: 38px;
+    }
+
+    /* SEÇÃO MAPA */
+    .secao-mapa {
+        padding: 56px 0;
+    }
+
+    .endereco {
+        font-size: 15px;
+    }
+
+    .moldura-mapa {
+        height: 330px;
+    }
+}

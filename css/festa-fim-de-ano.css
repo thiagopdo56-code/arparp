@@ -1,0 +1,56 @@
+/* BANNER DA PÁGINA */
+.pagina-banner {
+    background: radial-gradient(circle at 85% 50%, #0d2987 0%, #081a5e 50%, #05103a 100%);
+    color: #ffffff;
+    padding: 48px 0 56px;
+}
+
+.pagina-banner h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 0.95;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.pagina-descricao {
+    max-width: 520px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #d1deff;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-bottom: 36px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.botao-voltar:hover {
+    text-decoration: underline;
+}
+
+/* FOTOS */
+.pagina-galeria {
+    background: #ffffff;
+    padding: 64px 0;
+}
+
+/* RESPONSIVIDADE (celular e tablet) */
+/* Estas regras só valem em telas de até 800px */
+@media (max-width: 800px) {
+    /* BANNER DA PÁGINA */
+    .pagina-banner h1 {
+        font-size: 48px;
+    }
+
+    /* FOTOS */
+    .pagina-galeria {
+        padding: 40px 0;
+    }
+}
